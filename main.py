@@ -13,7 +13,7 @@ from data import process_spreadsheet,convert_to_iso, get_hebrew_date
 
 weeks = process_spreadsheet("Jacob's Zmanim Archive 5785 - Jacobs copy zmanim(Sheet1) (1) (1).csv")
 hebrew_date = ""
-# print(weeks)
+print(weeks)
 for week in weeks:
   iso_day_english = convert_to_iso( week['date_english'] )
   hebrew_date = get_hebrew_date(iso_day_english)
@@ -35,9 +35,7 @@ for week in weeks:
                  earliest_candle_lighting=week['earliest_candle_lighting'],
                  filename=f"{week['parsha_english']} {hebrew_date[-5::]}.html"
                 ) 
-  break
-  if not week["plag_kabbalat_shabbat"]:
-    break
+  
   # print(week)
   # print(iso_day_english)
   # print(hebrew_date)  

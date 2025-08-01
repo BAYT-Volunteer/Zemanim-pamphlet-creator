@@ -13,6 +13,7 @@ def create_html_file(date_english,
                      plag_mincha_chol,
                      late_maariv_times=[],
                      filename="index.html",
+                     logo_url="Logo/grey logo transparent.png",
                      plag_kabbalat_shabbat="N/A"):
     """
     Creates an HTML file containing the provided code string.
@@ -25,9 +26,14 @@ def create_html_file(date_english,
     if not len(late_maariv_times) == 1:
         late_maariv_times = " PM, ".join(late_maariv_times) + " PM"
     else:
-        late_maari.wv_times = late_maariv_times[0]
+      late_maariv_times = late_maariv_times[0]
     shabbat_shacharit_times = "AM, ".join(shabbat_shacharit_times) + " AM"
-    
+    print(len(parsha_english))
+    font_size = '3.0rem'
+    if len(parsha_english) +8  > 25:
+      font_size = '2.6rem'
+    if len(parsha_english) + 8 > 35:
+      font_size = '2.2rem'
     html_content = """
     <!DOCTYPE html>
     <head>
@@ -71,18 +77,17 @@ def create_html_file(date_english,
       padding:10px 25px;
     }
     .logo {
-      position:absolute;
-      opacity:60%;
-      width:30px;
-      right:15px;
-
-
-    }
+    position: absolute;
+    opacity: 75%;
+    width: 40px;
+    right: 5px;
+    top: 2px;
+   }
     .disclaimer {
         position: absolute;
     transform: rotate(270deg) translateY(-50%);
     top: 50%;
-    right: -50px;
+    right: -90px;
     font-family: 'Open Sans';
     font-weight: 700;
     }
@@ -90,7 +95,7 @@ def create_html_file(date_english,
       text-align:center;
       margin-bottom:6px;
       """ + f"""
-      {'font-size:2.2rem' if len(parsha_english) > 40 else 'font-size:2.6rem' if len(parsha_english) > 30 else 'font-size:3rem' }
+      font-size:{font_size};
       """ + """
    
 
@@ -191,8 +196,9 @@ def create_html_file(date_english,
     <body class="container">
     <main class="box card">
       <div class="content">
-        <img class="logo"src="https://upload.wikimedia.org/wikipedia/en/8/8f/Logo_of_Beth_Avraham_Yoseph_synagogue.png" alt="BAYT LOGO"/>
-        <span class="disclaimer">*Times may differ - please refer to bulletin </span>
+        <img class="logo"src="{logo_url}" alt="BAYT LOGO"/>
+        <span class="disclaimer">*All times are subject to change - Please refer to weekday bulletin
+      </span>
         <h2 class="header"> Parshas {parsha_english} </h2>
       <h2 class ="header"> {'פרשת'} {parsha_hebrew} <h2>
         <h3 class="date"> {date_english} | {date_hebrew} </h3>
