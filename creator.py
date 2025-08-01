@@ -84,12 +84,13 @@ def create_html_file(date_english,
     top: 2px;
    }
     .disclaimer {
-        position: absolute;
+       position: absolute;
     transform: rotate(270deg) translateY(-50%);
-    top: 50%;
-    right: -90px;
+    top: 76%;
+    right: -77px;
     font-family: 'Open Sans';
     font-weight: 700;
+    font-size: 1.0rem;
     }
     .header {
       text-align:center;
@@ -197,7 +198,7 @@ def create_html_file(date_english,
     <main class="box card">
       <div class="content">
         <img class="logo"src="{logo_url}" alt="BAYT LOGO"/>
-        <span class="disclaimer">*All times are subject to change - Please refer to weekday bulletin
+        <span class="disclaimer">*All times are subject to change - Please refer to weekly bulletin
       </span>
         <h2 class="header"> Parshas {parsha_english} </h2>
       <h2 class ="header"> {'פרשת'} {parsha_hebrew} <h2>
