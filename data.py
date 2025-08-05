@@ -11,7 +11,23 @@ def convert_to_iso(date_str):
         return date_obj.strftime("%Y-%m-%d")
     except ValueError as e:
         return f"Invalid date format: {e}"
+def is_shabbos(date_str, date_format="%Y-%m-%d"):
+    """
+    Determines if the given date is a Saturday.
 
+    Args:
+        date_str (str): The date string to check.
+        date_format (str): The format of the input date string (default: "%Y-%m-%d").
+
+    Returns:
+        bool: True if the date is a Saturday, False otherwise.
+    """
+    try:
+        date_obj = datetime.strptime(date_str, date_format)
+        return date_obj.weekday() == 5  # Monday is 0, Saturday is 5
+    except ValueError:
+        print("Invalid date format.")
+        return False
 # Example usage
 def get_hebrew_date(iso_day_english):
    

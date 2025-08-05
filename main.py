@@ -1,6 +1,6 @@
 from requests import get
 from creator import create_html_file
-from data import process_spreadsheet,convert_to_iso, get_hebrew_date
+from data import  process_spreadsheet,convert_to_iso, get_hebrew_date, is_shabbos
 
 # Guidelines 
 # Dates - all strings containing the full date 
