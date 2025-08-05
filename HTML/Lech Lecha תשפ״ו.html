@@ -1,45 +1,4 @@
-def create_html_file(date_english,
-                     date_hebrew,
-                     parsha_english,
-                     parsha_hebrew,
-                     latest_candle_lighting,
-                     earliest_candle_lighting,
-                     sunset_kabbalat_shabbat,
-                     latest_shema,
-                     mincha_shabbat,
-                     havdala,
-                     shabbat_shacharit_times,
-                     sunset_mincha_chol,
-                     plag_mincha_chol,
-                     late_maariv_times=[],
-                     filename="index.html",
-                     logo_url="Logo/grey logo transparent.png",
-                     plag_kabbalat_shabbat="N/A"):
-    """
-    Creates an HTML file containing the provided code string.
 
-    Args:
-        code_string (str): The code to be embedded in the HTML file.
-        filename (str, optional): The name of the HTML file to create. Defaults to "index.html".
-    
-    """
-    if not len(late_maariv_times) == 1:
-        late_maariv_times = " PM, ".join(late_maariv_times) + " PM"
-    else:
-      late_maariv_times = late_maariv_times[0]
-    shabbat_shacharit_times = "AM, ".join(shabbat_shacharit_times) + " AM"
-    print(len(parsha_english))
-    font_size = '3.6rem'
-    if len(parsha_english) +8  >= 20:
-      font_size = '3.2rem'
-    if len(parsha_english) + 8 >= 24:
-      font_size = '3.0rem'
-    if len(parsha_english) + 8 >= 28:
-      font_size = '2.6rem'
-    if len(parsha_english) + 8 > 35:
-        font_size = '2.4rem'
-
-    html_content = """
     <!DOCTYPE html>
     <head>
       <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -101,9 +60,9 @@ def create_html_file(date_english,
       text-align:center;
     /*  margin-bottom:6px; */
       font-weight:750;
-      """ + f"""
-      font-size:{font_size};
-      """ + """
+      
+      font-size:3.6rem;
+      
    
 
     }
@@ -200,40 +159,40 @@ def create_html_file(date_english,
 
     </style>
     </head>
-    """ + f"""
+    
     <body class="container">
     <main class="box card">
       <div class="content">
-        <img class="logo"src="{logo_url}" alt="BAYT LOGO"/>
+        <img class="logo"src="Logo/grey logo transparent.png" alt="BAYT LOGO"/>
         <span class="disclaimer">*All times are subject to change - Please refer to weekly bulletin
       </span>
-        <h2 class="header"> Parshas {parsha_english} </h2>
-      <h2 class ="header"> {'פרשת'} {parsha_hebrew} <h2>
-        <h3 class="date"> {date_english} | {date_hebrew} </h3>
+        <h2 class="header"> Parshas Lech Lecha </h2>
+      <h2 class ="header"> פרשת לך לך <h2>
+        <h3 class="date"> November 1, 2025 | י׳ חשון תשפ״ו </h3>
         <div class="head-line-container">
         <div class="line date-line">&nbsp; </div>
         </div>
           <h3 class= "candle-lighting">
             Candle Lighting | הדלקת נרות
           </h3>
-          <span class="latest"> {latest_candle_lighting} </span>
-        {f'''<span class="earliest"> Earliest Candle Lighting | {earliest_candle_lighting} PM </span> ''' if earliest_candle_lighting else ''}
+          <span class="latest"> 5:51 </span>
+        
         <div class="erev-shabbos">
             <h6 class="shabbos-title"> Erev Shabbos</h6>
-              {f'''  <span class="davening-time"> Plag Mincha & Kabbalas Shabbos | <span class="bold"> {plag_kabbalat_shabbat} PM </span></span>'''if plag_kabbalat_shabbat else ''}
-                  <span class="davening-time"> Mincha & Kabbalas Shabbos | <span class="bold"> {sunset_kabbalat_shabbat} PM </span>
+              
+                  <span class="davening-time"> Mincha & Kabbalas Shabbos | <span class="bold"> 6:00 PM </span>
                 </span> 
                   </div>
         <div class="shabbos-day">
             <h6 class="shabbos-title">Shabbos Day</h6>
-                <span class="davening-time"> Shacharis | <span class="bold"> {shabbat_shacharit_times} </span></span>
-              <span class="davening-time"> Latest Shema | <span class="bold"> {latest_shema} AM </span>
+                <span class="davening-time"> Shacharis | <span class="bold"> 7:30AM, 8:30AM, 8:45AM, 9:00AM, 9:30 AM </span></span>
+              <span class="davening-time"> Latest Shema | <span class="bold"> 10:27 AM </span>
                 </span> 
-          <span class="davening-time"> Mincha | <span class="bold"> {mincha_shabbat} PM </span>
+          <span class="davening-time"> Mincha | <span class="bold"> 5:45 PM </span>
                 </span> 
-          {f'''
-          <span class="davening-time"> Havdalah | <span class="bold"> {havdala} PM </span>
-                </span>''' if havdala else ''} 
+          
+          <span class="davening-time"> Havdalah | <span class="bold"> 6:53 PM </span>
+                </span> 
                   </div>
         <div class "upcoming">
           <div class="line-container">
@@ -247,11 +206,10 @@ def create_html_file(date_english,
             <span class="davening-time"> Sun | <span class="bold"> 6:45 AM 8:00 AM 9:00 AM </span></span>
             <span class="davening-time"> Mon & Thurs | <span class="bold slight-margin-left"> 6:20 AM </span> Tues, Wed & Fri | <span class="bold"> 6:30 AM </span></span>
             <span class="davening-time slight-margin-bottom"> Mon - Fri | <span class="bold "> 6:45 AM 8:00 AM 9:00 AM </span></span>
-               {f'''<span class="davening-time"> Plag Mincha/Maariv | <span class="bold"> {plag_mincha_chol} PM </span>
-                </span>''' if plag_mincha_chol  else '' }
-               <span class="davening-time"> Mincha/Maariv | <span class="bold"> {sunset_mincha_chol} PM </span>
+               
+               <span class="davening-time"> Mincha/Maariv | <span class="bold"> 4:50 PM </span>
                 </span> 
-               <span class="davening-time"> Late Maariv | <span class="bold"> {late_maariv_times} </span>
+               <span class="davening-time"> Late Maariv | <span class="bold"> 9:00 PM, 9:45 PM </span>
                 </span> 
           </div>
         </div>
@@ -262,9 +220,4 @@ def create_html_file(date_english,
         </main>
       </body>
 
-    """
-
-    with open(f"./HTML/{filename}", "w") as f:
-        f.write(html_content)
-
-    print("index.html file created successfully.")
+    

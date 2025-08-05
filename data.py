@@ -45,6 +45,7 @@ def process_spreadsheet(file_path):
             print("done")
             break
         if parsha['Yellow'] == "Yellow":
+            # Change to if ["Is Chag"] == "Yes"
             continue
         week['parsha_english'] = parsha['Parsha English']
         week['parsha_hebrew'] = parsha['Parsha Hebrew']

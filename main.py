@@ -34,7 +34,11 @@ for week in weeks:
                  shabbat_shacharit_times = ["7:30", "8:30", "8:45", "9:00", "9:30"],
                  earliest_candle_lighting=week['earliest_candle_lighting'],
                  filename=f"{week['parsha_english']} {hebrew_date[-5::]}.html"
-                ) 
+                )
+print("DONE!!!!!!")
+
+
+
   
   # print(week)
   # print(iso_day_english)
