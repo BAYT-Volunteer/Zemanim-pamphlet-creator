@@ -1,5 +1,6 @@
 def create_html_file(date_english,
                      date_hebrew,
+                     is_shabbos,
                      parsha_english,
                      parsha_hebrew,
                      latest_candle_lighting,
@@ -12,6 +13,7 @@ def create_html_file(date_english,
                      sunset_mincha_chol,
                      plag_mincha_chol,
                      late_maariv_times=[],
+                     is_chag= False,
                      filename="index.html",
                      logo_url="Logo/grey logo transparent.png",
                      plag_kabbalat_shabbat="N/A"):
@@ -28,15 +30,16 @@ def create_html_file(date_english,
     else:
       late_maariv_times = late_maariv_times[0]
     shabbat_shacharit_times = "AM, ".join(shabbat_shacharit_times) + " AM"
-    print(len(parsha_english))
+    # print(len(parsha_english))
+    parsha_name_length = len(parsha_english) + 8 if is_shabbos else len(parsha_english)
     font_size = '3.6rem'
-    if len(parsha_english) +8  >= 20:
+    if parsha_name_length  >= 20:
       font_size = '3.2rem'
-    if len(parsha_english) + 8 >= 24:
+    if parsha_name_length >= 24:
       font_size = '3.0rem'
-    if len(parsha_english) + 8 >= 28:
+    if parsha_name_length >= 28:
       font_size = '2.6rem'
-    if len(parsha_english) + 8 > 35:
+    if parsha_name_length > 35:
         font_size = '2.4rem'
 
     html_content = """
@@ -207,8 +210,8 @@ def create_html_file(date_english,
         <img class="logo"src="{logo_url}" alt="BAYT LOGO"/>
         <span class="disclaimer">*All times are subject to change - Please refer to weekly bulletin
       </span>
-        <h2 class="header"> Parshas {parsha_english} </h2>
-      <h2 class ="header"> {'פרשת'} {parsha_hebrew} <h2>
+        <h2 class="header"> {'Parshas' if is_shabbos and  not is_chag else ''} {parsha_english} </h2>
+      <h2 class ="header"> {'פרשת' if is_shabbos and not is_chag else ''} {parsha_hebrew} <h2>
         <h3 class="date"> {date_english} | {date_hebrew} </h3>
         <div class="head-line-container">
         <div class="line date-line">&nbsp; </div>
@@ -219,13 +222,13 @@ def create_html_file(date_english,
           <span class="latest"> {latest_candle_lighting} </span>
         {f'''<span class="earliest"> Earliest Candle Lighting | {earliest_candle_lighting} PM </span> ''' if earliest_candle_lighting else ''}
         <div class="erev-shabbos">
-            <h6 class="shabbos-title"> Erev Shabbos</h6>
-              {f'''  <span class="davening-time"> Plag Mincha & Kabbalas Shabbos | <span class="bold"> {plag_kabbalat_shabbat} PM </span></span>'''if plag_kabbalat_shabbat else ''}
-                  <span class="davening-time"> Mincha & Kabbalas Shabbos | <span class="bold"> {sunset_kabbalat_shabbat} PM </span>
+            <h6 class="shabbos-title"> Erev {'Shabbos' if is_shabbos  else 'Yom Tov'}</h6>
+              {f'''  <span class="davening-time"> Plag Mincha{' & Kabbalas Shabbos' if is_shabbos else '/Maariv'} | <span class="bold"> {plag_kabbalat_shabbat} PM </span></span>'''if plag_kabbalat_shabbat else ''}
+                  <span class="davening-time"> Mincha{' & Kabbalas Shabbos' if is_shabbos else '/Maariv'} | <span class="bold"> {sunset_kabbalat_shabbat} PM </span>
                 </span> 
                   </div>
         <div class="shabbos-day">
-            <h6 class="shabbos-title">Shabbos Day</h6>
+            <h6 class="shabbos-title">{'Shabbos' if is_shabbos else 'Yom Tov'} Day</h6>
                 <span class="davening-time"> Shacharis | <span class="bold"> {shabbat_shacharit_times} </span></span>
               <span class="davening-time"> Latest Shema | <span class="bold"> {latest_shema} AM </span>
                 </span> 
@@ -235,7 +238,7 @@ def create_html_file(date_english,
           <span class="davening-time"> Havdalah | <span class="bold"> {havdala} PM </span>
                 </span>''' if havdala else ''} 
                   </div>
-        <div class "upcoming">
+        <div class ="upcoming">
           <div class="line-container">
             <div class="line upcoming-line">&nbsp;</div>
             <h4 class="upcoming-title"> Upcoming Weekday Davening </h4>

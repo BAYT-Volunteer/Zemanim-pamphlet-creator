@@ -24,6 +24,7 @@ def is_shabbos(date_str, date_format="%Y-%m-%d"):
     """
     try:
         date_obj = datetime.strptime(date_str, date_format)
+        # print(date_obj)
         return date_obj.weekday() == 5  # Monday is 0, Saturday is 5
     except ValueError:
         print("Invalid date format.")
