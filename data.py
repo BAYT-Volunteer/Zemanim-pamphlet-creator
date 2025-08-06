@@ -61,7 +61,7 @@ def process_spreadsheet(file_path):
         if not isinstance(parsha['Parsha English'], str):
             print("done")
             break
-        if parsha['Yellow'] == "Yellow":
+        if parsha['Is Chag'] == "Yes":
             # Change to if ["Is Chag"] == "Yes"
             continue
         week['parsha_english'] = parsha['Parsha English']

@@ -1,17 +1,17 @@
-Parsha English,Parsha Hebrew,Yellow,Date English,Plag Candlelighting,Sunset Candlelighting,Shabbos Plag Mincha,Erev Mincha,Zman Shema,Yom Tov / Shabbos Mincha,Havdalah,Weekday Plag Mincha,Weekday Sunset Mincha,Late Maariv,Late Maariv #2,Shacharis Minyanim,,,,,,,,Week,Date,Week,Date
+Parsha English,Parsha Hebrew,Is Chag,Date English,Plag Candlelighting,Sunset Candlelighting,Shabbos Plag Mincha,Erev Mincha,Zman Shema,Yom Tov / Shabbos Mincha,Havdalah,Weekday Plag Mincha,Weekday Sunset Mincha,Late Maariv,Late Maariv #2,Shacharis Minyanim,,,,,,,,Week,Date,Week,Date
 Ki Seitzei,כי תצא,,"September 6, 2025",6:25:00 PM,7:27:00 PM,6:15:00 PM,7:35:00 PM,10:01:00 AM,7:20:00 PM,8:29:00 PM,6:05:00 PM,7:25:00 PM,9:00:00 PM,9:45 PM,"Sunday: 6:45, 8, 9 | Monday-Friday: 6:30 (M Th 6:20), 6:45, 7:00, 7:30, 8:30",,,,,,,,1,"September 6, 2025",27,"March 7, 2026"
 Ki Savo,כי תבוא,,"September 13, 2025",6:14:00 PM,7:15:00 PM,6:05:00 PM,7:25:00 PM,10:04:00 AM,7:10:00 PM,8:17:00 PM,5:55:00 PM,7:10:00 PM,9:00:00 PM,9:45 PM,"Sunday 6:30, 8, 9; Monday-Friday: 6:15 (M Th 6:05am), 6:30, 6:40, 7:15, 8:30",,,,,,,,2,"September 13, 2025",28,"March 14, 2026"
 Netzavim,נצבים,,"September 20, 2025",6:03:00 PM,7:02:00 PM,5:55:00 PM,7:10:00 PM,10:06:00 AM,6:55:00 PM,8:04:00 PM,,7:00:00 PM,9:00:00 PM,9:45 PM,"Sunday, 6:30, 7:45, 9; Monday Erev RH 5:45, 6:00, 6:45, 8:30; Thursday: 6:00, 6:25, 7:10, 8:30; Friday 6:10, 6:25, 7:10, 8:30",,,,,,,,3,"September 20, 2025",29,"March 21, 2026"
-Rosh Hashanah 1,,Yellow,,,6:56:00 PM,,7:05:00 PM,10:08:00 AM,,,,,9:00:00 PM,9:45 PM,,,,,,,,,4,"September 27, 2025",30,"March 28, 2026"
-Rosh Hashanah 2,,Yellow,,,7:58:00 PM,,7:00:00 PM,10:08:00 AM,,7:56:00 PM,,Tzom Gedaliah ends - 7:09,9:00:00 PM,9:45 PM,,,,,,,,,5,"October 4, 2025",31,"April 4, 2026"
+Rosh Hashanah 1,,Yes,,,6:56:00 PM,,7:05:00 PM,10:08:00 AM,,,,,9:00:00 PM,9:45 PM,,,,,,,,,4,"September 27, 2025",30,"March 28, 2026"
+Rosh Hashanah 2,,Yes,,,7:58:00 PM,,7:00:00 PM,10:08:00 AM,,7:56:00 PM,,Tzom Gedaliah ends - 7:09,9:00:00 PM,9:45 PM,,,,,,,,,5,"October 4, 2025",31,"April 4, 2026"
 Vayeilech (Shuva),וילך (שובה),,"September 27, 2025",,6:49:00 PM,,7:00:00 PM,10:09:00 AM,6:45:00 PM,7:51:00 PM,,6:45:00 PM,9:00:00 PM,9:45 PM,,,,,,,,,6,"October 11, 2025",32,"April 11, 2026"
-Yom Kippur,,Yellow,,,6:40:00 PM,,6:30:00 PM,10:11:00 AM,,,,,9:00:00 PM,9:45 PM,,,,,,,,,7,"October 18, 2025",33,"April 18, 2026"
+Yom Kippur,,Yes,,,6:40:00 PM,,6:30:00 PM,10:11:00 AM,,,,,9:00:00 PM,9:45 PM,,,,,,,,,7,"October 18, 2025",33,"April 18, 2026"
 Haazinu,האזינו,,"October 4, 2025",,6:36:00 PM,,6:45:00 PM,10:12:00 AM,6:30:00 PM,7:38:00 PM,,6:35:00 PM,9:00:00 PM,9:45 PM,"Sunday: 6:45, 8, 9; Monday 6:20",,,,,,,,8,"October 25, 2025",34,"April 25, 2026"
-Sukkos 1,,Yellow,,,6:31:00 PM,,6:40:00 PM,10:13:00 AM,,,,,9:00:00 PM,9:45 PM,,,,,,,,,9,"November 1, 2025",35,"May 2, 2026"
-Sukkos 2,,Yellow,,,7:33:00 PM,,6:35:00 PM,10:14:00 AM,,7:31:00 PM,,,9:00:00 PM,9:45 PM,,,,,,,,,10,"November 8, 2025",36,"May 9, 2026"
-Shabbos Chol Hamoed,,Yellow,"October 11, 2025",,6:24:00 PM,,6:30:00 PM,10:15:00 AM,6:20:00 PM,7:26:00 PM,,6:20:00 PM,9:00 PM,9:45 PM,,,,,,,,,11,"November 15, 2025",37,"May 16, 2026"
-Shemini Atzeres,,Yellow,,,6:19:00 PM,,6:25:00 PM,10:17:00 AM,,,,,9:00:00 PM,9:45 PM,,,,,,,,,12,"November 22, 2025",38,"May 23, 2026"
-Simchas Torah,,Yellow,,,7:21:00 PM,,6:25:00 PM,10:17:00 AM,,7:19:00 PM,,,9:00:00 PM,9:45 PM,,,,,,,,,13,"November 29, 2025",39,"May 30, 2026"
+Sukkos 1,,Yes,,,6:31:00 PM,,6:40:00 PM,10:13:00 AM,,,,,9:00:00 PM,9:45 PM,,,,,,,,,9,"November 1, 2025",35,"May 2, 2026"
+Sukkos 2,,Yes,,,7:33:00 PM,,6:35:00 PM,10:14:00 AM,,7:31:00 PM,,,9:00:00 PM,9:45 PM,,,,,,,,,10,"November 8, 2025",36,"May 9, 2026"
+Shabbos Chol Hamoed,,Yes,"October 11, 2025",,6:24:00 PM,,6:30:00 PM,10:15:00 AM,6:20:00 PM,7:26:00 PM,,6:20:00 PM,9:00 PM,9:45 PM,,,,,,,,,11,"November 15, 2025",37,"May 16, 2026"
+Shemini Atzeres,,Yes,,,6:19:00 PM,,6:25:00 PM,10:17:00 AM,,,,,9:00:00 PM,9:45 PM,,,,,,,,,12,"November 22, 2025",38,"May 23, 2026"
+Simchas Torah,,Yes,,,7:21:00 PM,,6:25:00 PM,10:17:00 AM,,7:19:00 PM,,,9:00:00 PM,9:45 PM,,,,,,,,,13,"November 29, 2025",39,"May 30, 2026"
 Bereishis (Mevorchim),בראשית (מברכים),,"October 18, 2025",,6:12:00 PM,,6:20:00 PM,10:19:00 AM,6:05:00 PM,7:14:00 PM,,6:10:00 PM,9:00:00 PM,9:45 PM,Sunday - 8:30 minyan starts up again,,,,,,,,14,"December 6, 2025",40,"June 6, 2026"
 Noach,נח,,"October 25, 2025",,6:01:00 PM,,6:10:00 PM,10:23:00 AM,5:55:00 PM,7:03:00 PM,,6:00:00 PM,9:00:00 PM,9:45 PM,,,,,,,,,15,"December 13, 2025",41,"June 13, 2026"
 Lech Lecha,לך לך,,"November 1, 2025",,5:51:00 PM,,6:00:00 PM,10:27:00 AM,5:45:00 PM,6:53:00 PM,,4:50:00 PM,9:00:00 PM,9:45 PM,,,,,,,,,16,"December 20, 2025",42,"June 20, 2026"
@@ -36,19 +36,19 @@ Ki Sisa (Parah),כי תשא (פרה),,"March 7, 2026",,5:54:00 PM,,6:00:00 PM,9:
 "Vayakhel - Pekudei  (Hachodesh, Mevarchim) ","ויקהל-פקודי (החודש, מברכים)",,"March 14, 2026",6:08:00 PM,7:03:00 PM,6:00:00 PM,7:10:00 PM,10:29:00 AM,7:00:00 PM,8:08:00 PM,6:00,7:15:00 PM,9:00:00 PM,9:45 PM,,,,,,,,,,,,
 Vayikra,ויקרא,,"March 21, 2026",6:14:00 PM,7:12:00 PM,6:05:00 PM,7:20:00 PM,10:22:00 AM,7:10:00 PM,8:17:00 PM,6:05:00 PM,7:20:00 PM,9:00:00 PM,9:45 PM,,,,,,,,,,,,
 Tzav (Shabbos Hagadol),צו (שבת הגדול),,"March 28, 2026",6:21:00 PM,7:20:00 PM,18:10,7:30:00 PM,10:14:00 AM,7:20:00 PM,8:25:00 PM,6:10:00 PM,7:30:00 PM,9:00:00 PM,9:45 PM,,,,,,,,,,,,
-Pesach 1 - Eruv Tavshilin,,Yellow,,,,,,10:09:00 AM,,,,,9:00:00 PM,9:45 PM,,,,,,,,,,,,
-Pesach 2,,Yellow,,,,,7:35:00 PM,10:08:00 AM,,8:33:00 PM,,,9:00:00 PM,9:45 PM,,,,,,,,,,,,
-Shabbos Chol Hamoed  - Pesach,,Yellow,"April 4, 2026",6:27,7:29:00 PM,6:15:00 PM,,10:07:00 AM,7:25:00 PM,8:34:00 PM,6:20:00 PM,7:40:00 PM,9:00:00 PM,9:45 PM,,,,,,,,,,,,
-Shevii Shel Pesach,,Yellow,,,,,,10:03:00 AM,,,,,9:00:00 PM,9:45 PM,,,,,,,,,,,,
-Acharon Shel Pesach,,Yellow,,,,,,10:02:00 AM,,8:40:00 PM,,,9:00:00 PM,9:45 PM,,,,,,,,,,,,
+Pesach 1 - Eruv Tavshilin,,Yes,,,,,,10:09:00 AM,,,,,9:00:00 PM,9:45 PM,,,,,,,,,,,,
+Pesach 2,,Yes,,,,,7:35:00 PM,10:08:00 AM,,8:33:00 PM,,,9:00:00 PM,9:45 PM,,,,,,,,,,,,
+Shabbos Chol Hamoed  - Pesach,,Yes,"April 4, 2026",6:27,7:29:00 PM,6:15:00 PM,,10:07:00 AM,7:25:00 PM,8:34:00 PM,6:20:00 PM,7:40:00 PM,9:00:00 PM,9:45 PM,,,,,,,,,,,,
+Shevii Shel Pesach,,Yes,,,,,,10:03:00 AM,,,,,9:00:00 PM,9:45 PM,,,,,,,,,,,,
+Acharon Shel Pesach,,Yes,,,,,,10:02:00 AM,,8:40:00 PM,,,9:00:00 PM,9:45 PM,,,,,,,,,,,,
 Shemini (Mevorchim),שמיני (מברכים),,"April 11, 2026",6:33:00 PM,7:37:00 PM,6:25:00 PM,7:45:00 PM,10:00:00 AM,7:35:00 PM,8:42:00 PM,6:25:00 PM,7:50:00 PM,9:00:00 PM,9:45 PM,,,,,,,,,,,,
 Tazria-Metzorah  (Rosh Chodesh),תזריע-מצורע (ראש חודש),,"April 18, 2026",6:39:00 PM,7:45:00 PM,6:30:00 PM,7:55 PM,9:53:00 AM,7:45:00 PM,8:51:00 PM,6:30:00 PM,7:55:00 PM,9:00:00 PM,9:45 PM,,,,,,,,,,,,
 Acharei Mos-Kedoshim,אחרי מות-קדושים,,"April 25, 2026",6:46:00 PM,7:54:00 PM,6:35:00 PM,8:00:00 PM,9:47:00 AM,7:50:00 PM,8:59:00 PM,6:40:00 PM,8:05:00 PM,,9:45 PM,,,,,,,,,,,,
 Emor,אמר,,"May 2, 2026",6:52:00 PM,8:02:00 PM,6:40:00 PM,8:10:00 PM,9:41:00 AM,8:00:00 PM,9:07:00 PM,6:45:00 PM,8:15:00 PM,,9:45 PM,,,,,,,,,,,,
 Behar-Bechukosai,בהר-בחקתי,,"May 9, 2026",6:58:00 PM,8:10:00 PM,6:50:00 PM,8:20:00 PM,9:36:00 AM,8:10:00 PM,9:16:00 PM,6:50:00 PM,8:20:00 PM,,9:45 PM,,,,,,,,,,,,
 Bamidbar (Mevorchim),במדבר (מברכים),,"May 16, 2026",7:05:00 PM,8:18:00 PM,6:55:00 PM,8:25:00 PM,9:32:00 AM,8:15:00 PM,9:23:00 PM,6:55:00 PM,8:30:00 PM,,9:45 PM,,,,,,,,,,,,
-Shavuos 1,,Yellow,,,,,8:35:00 PM,9:30:00 AM,,,,,,9:45 PM,,,,,,,,,,,,
-Shavuos 2,,Yellow,"May 23, 2026",7:10:00 PM,8:26:00 PM,7:00:00 PM,8:35:00 PM,9:29:00 AM,8:25:00 PM,9:31:00 PM,7:00:00 PM,8:35:00 PM,,9:45 PM,,,,,,,,,,,,
+Shavuos 1,,Yes,,,,,8:35:00 PM,9:30:00 AM,,,,,,9:45 PM,,,,,,,,,,,,
+Shavuos 2,,Yes,"May 23, 2026",7:10:00 PM,8:26:00 PM,7:00:00 PM,8:35:00 PM,9:29:00 AM,8:25:00 PM,9:31:00 PM,7:00:00 PM,8:35:00 PM,,9:45 PM,,,,,,,,,,,,
 Naso,נשא,,"May 30, 2026",7:16:00 PM,8:32:00 PM,7:05:00 PM,8:40:00 PM,9:27:00 AM,8:30:00 PM,9:37:00 PM,7:05:00 PM,8:40:00 PM,,9:45 PM,,,,,,,,,,,,
 Bahaaloscha,בהעלותך,,"June 6, 2026",7:20:00 PM,8:38:00 PM,7:10:00 PM,8:45:00 PM,9:26:00 AM,8:35:00 PM,9:42:00 PM,7:10:00 PM,8:45:00 PM,,9:45 PM,,,,,,,,,,,,
 Shelach (Mevorchim),שלח (מברכים),,"June 13, 2026",7:24:00 PM,8:42:00 PM,7:15:00 PM,8:50:00 PM,9:26:00 AM,8:40:00 PM,9:46:00 PM,7:15:00 PM,8:50:00 PM,,9:45 PM,,,,,,,,,,,,
